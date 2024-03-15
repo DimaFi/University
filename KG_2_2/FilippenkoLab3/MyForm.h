@@ -302,6 +302,8 @@ namespace FilippenkoLab3 {
         }
     private: System::Windows::Forms::OpenFileDialog^ openFileDialog;
     private: System::Windows::Forms::Button^ btnOpen;
+    private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
+
     protected:
 
 
@@ -321,23 +323,29 @@ namespace FilippenkoLab3 {
         {
             this->openFileDialog = (gcnew System::Windows::Forms::OpenFileDialog());
             this->btnOpen = (gcnew System::Windows::Forms::Button());
+            this->openFileDialog1 = (gcnew System::Windows::Forms::OpenFileDialog());
             this->SuspendLayout();
             // 
             // openFileDialog
             // 
             this->openFileDialog->DefaultExt = L"txt";
+            this->openFileDialog->FileName = L"Сдлеать поле пустым";
             this->openFileDialog->Filter = L"Текстовые файлы (*.txt)|*.txt|Все файлы (*.*)|*.*";
             this->openFileDialog->Title = L"Открыть файл";
             // 
             // btnOpen
             // 
-            this->btnOpen->Location = System::Drawing::Point(121, 117);
+            this->btnOpen->Location = System::Drawing::Point(99, 111);
             this->btnOpen->Name = L"btnOpen";
             this->btnOpen->Size = System::Drawing::Size(75, 23);
             this->btnOpen->TabIndex = 0;
             this->btnOpen->Text = L"Открыть";
             this->btnOpen->UseVisualStyleBackColor = true;
             this->btnOpen->Click += gcnew System::EventHandler(this, &MyForm::btnOpen_Click);
+            // 
+            // openFileDialog1
+            // 
+            this->openFileDialog1->FileName = L"openFileDialog1";
             // 
             // MyForm
             // 
