@@ -23,9 +23,6 @@
     <ClInclude Include="Figure.h" />
     <ClInclude Include="Matrix.h" />
     <ClInclude Include="MyForm.h" />
-    <ClInclude Include="MyForm1.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
     <ClInclude Include="Transform.h" />
   </ItemGroup>
   <ItemGroup>
@@ -34,7 +31,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyForm.cpp" />
-    <ClCompile Include="MyForm1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -106,6 +102,8 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
