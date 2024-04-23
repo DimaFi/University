@@ -19,9 +19,6 @@ namespace FilippenkoLab4 {
 	float aspectFig, Vx, Vy;
 
 
-
-
-
 	/// <summary>
 	/// Сводка для MyForm
 	/// </summary>
