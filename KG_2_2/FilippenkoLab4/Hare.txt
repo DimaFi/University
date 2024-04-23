@@ -1,5 +1,5 @@
-frame 22 30
-model 14.25 12.25 28.5 24.5 # центр вточке и размеры
+frame 20 10
+model 4.5 7 9 14 # центр вточке и размеры
 # туловище
 color 255 0 0 # цвет красный
 thickness 2   # толщина 2
@@ -286,20 +286,108 @@ path 5         #
 #Преобразования и размещение по описанию 
 scale 1
 
+#центр
 pushTransform 
-scale 3.0
+scale 1.5
 rotate -135
-translate 12 10
+translate 6 5
 figure 
 popTransform
 
+#слева по центру 1
 pushTransform 
-scale 2.0
+scale 0.38
 rotate 90
-translate 4 10
+translate 2 5
 figure 
 popTransform
 
+#слева сверху 1
+pushTransform 
+scale 0.38
+rotate 45
+translate 4 8.5
+figure 
+popTransform
+
+#справа сверху 1
+pushTransform 
+scale 0.38
+rotate -45
+translate 8 8.5
+figure 
+popTransform
+
+#справа по центру 1
+pushTransform 
+scale 0.38
+rotate -90
+translate 10 5
+figure 
+popTransform
+
+#справа снизу 1
+pushTransform 
+scale 0.38
+rotate -135
+translate 8 1.5
+figure 
+popTransform
+
+#слева сверху 1
+pushTransform 
+scale 0.38
+rotate 135
+translate 4 1.5
+figure 
+popTransform
+
+
+
+
+#слева сверху 2
+pushTransform 
+scale 0.38
+rotate -135
+translate 12 8.5
+figure 
+popTransform
+
+
+#справа сверху 2
+pushTransform 
+scale 0.38
+rotate 135
+translate 16 8.5
+figure 
+popTransform
+
+
+#справа центр 2
+pushTransform 
+scale 0.38
+rotate 90
+translate 18 5
+figure 
+popTransform
+
+
+#справа снизу 2
+pushTransform 
+scale 0.38
+rotate 45
+translate 16 2
+figure 
+popTransform
+
+
+#слева снизу 2
+pushTransform 
+scale 0.38
+rotate -45
+translate 12 2
+figure 
+popTransform
 
 
 
@@ -404,20 +492,102 @@ path 4
 2.25 2. # нос слева 
 2. 2.5 
 
-pushTransform # сохранить отправную точку
-rotate 30
-scale 0.5
-translate 7 4
-figure
-popTransform
-pushTransform 
-scale 0.5
-translate 7 9
-figure
-translate 6 0
-figure
-popTransform
+
+#Преобразования и размещение по описанию 
 scale 1
-rotate 90
-translate 18 2
-figure
+
+#сверху центр 1
+pushTransform 
+scale 0.25
+rotate 0
+translate 6 9
+figure 
+popTransform
+
+
+#слева у центра 1
+pushTransform 
+scale 0.25
+rotate 45
+translate 2.5 7
+figure 
+popTransform
+
+#слева у центра 1
+pushTransform 
+scale 0.25
+rotate 135
+translate 2.5 3
+figure 
+popTransform
+
+#снизу центр 1
+pushTransform 
+scale 0.25
+rotate -180
+translate 6 1
+figure 
+popTransform
+
+#справа снизу 1
+pushTransform 
+scale 0.25
+rotate -135
+translate 8.5 3
+figure 
+popTransform
+
+
+
+
+
+
+#центр 2
+pushTransform 
+scale 1
+rotate 0
+translate 14 5
+figure 
+popTransform
+
+
+#центр сверху 2
+pushTransform 
+scale 0.25
+rotate -180
+translate 14 9
+figure 
+popTransform
+
+#центр снизу 2
+pushTransform 
+scale 0.25
+rotate 0
+translate 14 1
+figure 
+popTransform
+
+
+#слева сверху 2
+pushTransform 
+scale 0.25
+rotate -135
+translate 10.5 7
+figure 
+popTransform
+
+#справа сверху 2
+pushTransform 
+scale 0.25
+rotate 135
+translate 17.5 7
+figure 
+popTransform
+
+#справа снизу 2
+pushTransform 
+scale 0.25
+rotate 45
+translate 17.5 3
+figure 
+popTransform
