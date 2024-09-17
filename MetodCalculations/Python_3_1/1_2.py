@@ -1,12 +1,10 @@
 import numpy as np
 
-# Данные из таблицы
 x = np.array([0, 1, 2, 3])
-V = 12.0  # Можно заменить на любое значение для V
+V = 12.0
 y = np.array([V, 1 + V, 8 + V, 27 + V])
 
-# Функция для вычисления полинома Лагранжа
-def lagrange_polynomial(x, y, x_values):
+def lagrange(x, y, x_values):
     n = len(x)
     result = []
     for x_val in x_values:
@@ -20,12 +18,9 @@ def lagrange_polynomial(x, y, x_values):
         result.append(L_n)
     return result
 
-# Точки, в которых хотим вычислить значение функции
-x_values_to_interpolate = [0.5, 1.5, 2.5]
+x_value = [0.5, 1.5, 2.5]
 
-# Вычисляем интерполированные значения
-interpolated_values = lagrange_polynomial(x, y, x_values_to_interpolate)
+interpolated_values = lagrange(x, y, x_value)
 
-# Выводим результаты
-for x_val, y_val in zip(x_values_to_interpolate, interpolated_values):
-    print(f"Приближенное значение функции в точке x = {x_val}: y = {y_val}")
+for x_val, y_val in zip(x_value, interpolated_values):
+    print(f"x = {x_val}: y = {y_val}")
